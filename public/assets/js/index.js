@@ -5,18 +5,6 @@ let $newNoteBtn = $('new-note');
 let $noteList = $('list-container .list-group');
 
 
-let currentNote = {};
-
-
-
-if (window.location.pathname === '/notes') {
-  noteTitle = document.querySelector('.note-title');
-  noteText = document.querySelector('.note-textarea');
-  saveNoteBtn = document.querySelector('.save-note');
-  newNoteBtn = document.querySelector('.new-note');
-  noteList = document.querySelectorAll('.list-container .list-group');
-}
-
 // Show an element
 const show = (elem) => {
   elem.style.display = 'inline';
@@ -52,8 +40,8 @@ const deleteNote = function(id) {
   });
 };
 
-const renderActiveNote = () => {
-  hide(saveNoteBtn);
+const renderActiveNote = function() {
+  $saveNoteBtn.hide();
 
   if (activeNote.id) {
     noteTitle.setAttribute('readonly', true);
@@ -68,30 +56,32 @@ const renderActiveNote = () => {
   }
 };
 
-const handleNoteSave = () => {
+const handleNoteSave = function() {
   const newNote = {
-    title: noteTitle.value,
-    text: noteText.value,
+    title: $noteTitle.val(),
+    text: $noteText.val(),
   };
-  saveNote(newNote).then(() => {
+
+  saveNote(newNote).then(function(data) {
     getAndRenderNotes();
     renderActiveNote();
   });
 };
 
 // Delete the clicked note
-const handleNoteDelete = (e) => {
+const handleNoteDelete = function(event) {
   // Prevents the click listener for the list from being called when the button inside of it is clicked
-  e.stopPropagation();
+  event.stopPropagation();
 
-  const note = e.target;
-  const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).id;
+  let note = $(this)
+    .parent('list-group-item')
+    .data();
 
   if (activeNote.id === noteId) {
     activeNote = {};
   }
 
-  deleteNote(noteId).then(() => {
+  deleteNote(noteId).then(function() {
     getAndRenderNotes();
     renderActiveNote();
   });
@@ -105,7 +95,7 @@ const handleNoteView = (e) => {
 };
 
 // Sets the activeNote to and empty object and allows the user to enter a new note
-const handleNewNoteView = (e) => {
+const handleNewNoteView = function() {
   activeNote = {};
   renderActiveNote();
 };

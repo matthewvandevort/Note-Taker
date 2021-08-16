@@ -5,16 +5,6 @@ let $newNoteBtn = $('new-note');
 let $noteList = $('list-container .list-group');
 
 
-// Show an element
-const show = (elem) => {
-  elem.style.display = 'inline';
-};
-
-// Hide an element
-const hide = (elem) => {
-  elem.style.display = 'none';
-};
-
 // activeNote is used to keep track of the note in the textarea
 let activeNote = {};
 

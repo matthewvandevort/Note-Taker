@@ -1,6 +1,15 @@
-[
-    {
-        "title":"Test Title",
-        "text":"Test text"
-    }
-]
+{
+    "notes": [
+        {
+            "title": "Thanks for using the Note Taker app!",
+            "text": "This handy app allows you to add and delete notes as you see fit. You can add a note by clicking the pencil icon at the top or click the save icon to save a note.",
+            "id": "0"
+        },
+        {
+            "title": "How to Delete Notes",
+            "text": "To delete a note simply click the trash can next to it.",
+            "id": "1"
+        }
+    ]
+}
+

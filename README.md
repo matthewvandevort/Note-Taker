@@ -43,22 +43,26 @@ Simply run:
 npm install
 ```
 
+# Link to Deployed Project
+
+[Heroku](https://note-taker-matt-vandevort.herokuapp.com/)
+
 # Screenshot
 
-![Team Profile Generator](images/TeamGenerator.jpeg)
-
-
-https://user-images.githubusercontent.com/82176811/129276617-ce452878-fb0e-4f89-939f-5ef9cf3f0ef9.mp4
-
+![Note Taker Landing](Note-Taker-Landing-Page.jpeg)
+![Note Taker Main](Note-Taker-Notes-Page.jpeg)
+![Note Taker Gif](NoteTaker.gif)
 
 # Resources Used
 
 * [MDN Docs](https://developer.mozilla.org/en-US/)
 
-* [Bootstrap Docs](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+* [Express Docs](http://expressjs.com/en/guide/routing.html)
+
+* [jQuery Docs](https://api.jquery.com/)
 
 * [YouTube](https://www.youtube.com/)
 
 # Sources
 
-* Thanks to my instructors and TA's. Thanks to my tutor Simon Rennocks. Thaks to my classmate Jose for helping me through a CSS issue!
+* Thanks to my instructors and TA's. Thanks to my tutor Simon Rennocks.

@@ -1,15 +1,14 @@
 {
-    "notes": [
-        {
-            "title": "Thanks for using the Note Taker app!",
-            "text": "This handy app allows you to add and delete notes as you see fit. You can add a note by clicking the pencil icon at the top or click the save icon to save a note.",
-            "id": "0"
-        },
-        {
-            "title": "How to Delete Notes",
-            "text": "To delete a note simply click the trash can next to it.",
-            "id": "1"
-        }
-    ]
+  "notes": [
+    {
+      "title": "Welcome to Note Taker!",
+      "text": "This application allows you to add and delete notes. You can add notes by clicking the pencil icon at the top and then click the save icon once you have entered what you need.",
+      "id": "0"
+    },
+    {
+      "title": "Deleting Notes",
+      "text": "You can delete notes by clicking the trash can next to the note you would like to delete.",
+      "id": "1"
+    }
+  ]
 }
-
